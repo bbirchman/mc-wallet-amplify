@@ -29,3 +29,8 @@ yarn-error.log*
 
 # Optional eslint cache
 .eslintcache
+
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*

@@ -4,7 +4,9 @@ import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 
 /* Amplify */
+import { Amplify } from 'aws-amplify';
 import { withAuthenticator } from '@aws-amplify/ui-react'
+import ampOutput from '../amplify_outputs.json'
 import '@aws-amplify/ui-react/styles.css'
 
 /* Core CSS required for Ionic components to work properly */
@@ -37,7 +39,9 @@ import '@ionic/react/css/palettes/dark.system.css';
 /* Theme variables */
 import './theme/variables.css';
 
+
 setupIonicReact();
+Amplify.configure(ampOutput);
 
 const App: React.FC = () => (
   <IonApp>

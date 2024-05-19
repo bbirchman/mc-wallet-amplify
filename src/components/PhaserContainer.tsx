@@ -21,7 +21,7 @@ const PhaserContainer: React.FC<ContainerProps> = () => {
       scene: {
         preload: function () {
           // Preload the PNG image
-          this.load.image('hymn', 'src/assets/cards/rare/card-called-hymn.png');
+          this.load.image('hymn', '/assets/cards/rare/card-called-hymn.png');
         },
         create: function () {
           // Binding `this` to the current scene
